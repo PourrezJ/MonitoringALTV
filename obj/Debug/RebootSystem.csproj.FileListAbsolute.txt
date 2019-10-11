@@ -1,0 +1,11 @@
+C:\Users\Administrateur\source\repos\RebootSystem\RebootSystem\RebootSystem\bin\Debug\RebootSystem.exe.config
+C:\Users\Administrateur\source\repos\RebootSystem\RebootSystem\RebootSystem\bin\Debug\RebootSystem.exe
+C:\Users\Administrateur\source\repos\RebootSystem\RebootSystem\RebootSystem\bin\Debug\RebootSystem.pdb
+C:\Users\Administrateur\source\repos\RebootSystem\RebootSystem\RebootSystem\bin\Debug\INIFileParser.dll
+C:\Users\Administrateur\source\repos\RebootSystem\RebootSystem\RebootSystem\bin\Debug\INIFileParser.xml
+C:\Users\Administrateur\source\repos\RebootSystem\RebootSystem\RebootSystem\obj\Debug\RebootSystem.csprojAssemblyReference.cache
+C:\Users\Administrateur\source\repos\RebootSystem\RebootSystem\RebootSystem\obj\Debug\RebootSystem.csproj.CoreCompileInputs.cache
+C:\Users\Administrateur\source\repos\RebootSystem\RebootSystem\RebootSystem\obj\Debug\RebootSystem.csproj.CopyComplete
+C:\Users\Administrateur\source\repos\RebootSystem\RebootSystem\RebootSystem\obj\Debug\RebootSystem.exe
+C:\Users\Administrateur\source\repos\RebootSystem\RebootSystem\RebootSystem\obj\Debug\RebootSystem.pdb
+C:\Users\Administrateur\source\repos\RebootSystem\RebootSystem\RebootSystem\bin\Debug\Configuration.ini

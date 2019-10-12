@@ -10,6 +10,7 @@ namespace IniFileParser.Example
 {
     public class MainProgram
     {
+        private const int CHECK_INTERVAL = 10000;
         private static Process Process;
         private static string _path;
 
@@ -56,7 +57,7 @@ namespace IniFileParser.Example
                             Process.Kill();
                             SaveLog();
                             Process.Start();
-                            Thread.Sleep(1000);
+                            Thread.Sleep(CHECK_INTERVAL);
                             return;
                         }
                     }
@@ -68,7 +69,7 @@ namespace IniFileParser.Example
                         Process.Start();
                     }
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(CHECK_INTERVAL);
                 }
             }
         }

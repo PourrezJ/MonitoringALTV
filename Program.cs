@@ -30,20 +30,14 @@ namespace IniFileParser.Example
 
             string[] reboot = parsedData["GeneralConfiguration"]["reboot"].Split(',');
             _path = parsedData["GeneralConfiguration"]["path"].ToString();
-            
+
             ProcessStartInfo startInfo = new ProcessStartInfo("server.exe");
             startInfo.FileName = "server.exe";
             startInfo.WorkingDirectory = _path;
             startInfo.WindowStyle = ProcessWindowStyle.Normal;
 
-            try
-            {
-                Process = Process.Start(startInfo);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
+            SaveLog();
+            Process = Process.Start(startInfo);
 
             while (true)
             {
@@ -61,7 +55,7 @@ namespace IniFileParser.Example
                             return;
                         }
                     }
-                    
+
                     if (Process.HasExited)
                     {
                         Console.WriteLine($"{DateTime.Now} | Crash détecté!");
@@ -81,8 +75,13 @@ namespace IniFileParser.Example
             while (IsFileLocked(logFile))
                 Thread.Sleep(100);
 
-            Directory.CreateDirectory($@"{_path}\logs");
-            File.Move(logFile, $@"{_path}\logs\{DateTime.Now.ToString("yyyyMMdd_HHmmss")}_server.log");
+            try
+            {
+                Directory.CreateDirectory($@"{_path}\logs");
+                File.Move(logFile, $@"{_path}\logs\{DateTime.Now.ToString("yyyyMMdd_HHmmss")}_server.log");
+            }
+            catch (Exception)
+            { }
         }
 
         private static bool IsFileLocked(string filePath)
